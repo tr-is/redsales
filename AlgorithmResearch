@@ -402,6 +402,12 @@ function main(){
   Other options
   
   Paid option - https://www.sajari.com/match
+  Free API for data matching, finds the most similar objects in the dataset, given a set of criteria / variables - https://market.mashape.com/windex/data-matching-algorithm
+  
+  Clone script n backend recommendation for building a dating app - https://hackernoon.com/how-to-build-a-dating-application-55d5ca0c8f5c
+  Hungarian algorithm, matching algorithm in ruby - https://dzone.com/articles/elegant-matching-algorithm 
+    
+    
   
   
   

@@ -28,6 +28,36 @@ $('#find-match').click(function(){
   
   
   ------------------------------------------------------------------------------------
+  The Gale–Shapley algorithm involves a number of "rounds" (or "iterations"):
+
+  In the first round, first a) each unengaged man proposes to the woman he prefers most, and then b) each woman replies "maybe" to her suitor she most prefers and "no" to all other suitors. She is then provisionally "engaged" to the suitor she most prefers so far, and that suitor is likewise provisionally engaged to her.
+  In each subsequent round, first a) each unengaged man proposes to the most-preferred woman to whom he has not yet proposed (regardless of whether the woman is already engaged), and then b) each woman replies "maybe" if she is currently not engaged or if she prefers this guy over her current provisional partner (in this case, she rejects her current provisional partner who becomes unengaged). The provisional nature of engagements preserves the right of an already-engaged woman to "trade up" (and, in the process, to "jilt" her until-then partner).
+  This process is repeated until everyone is engaged.
+  The runtime complexity of this algorithm is {\displaystyle O(n^{2})} O(n^{2}) where {\displaystyle n} n is number of men or women.[6]
+
+  This algorithm guarantees that:
+  Everyone gets married 
+  The marriages are stable 
+  
+  Algorithm:
+  function stableMatching {
+      Initialize all m ∈ M and w ∈ W to free
+      while ∃ free man m who still has a woman w to propose to {
+         w = first woman on m’s list to whom m has not yet proposed
+         if w is free
+           (m, w) become engaged
+         else some pair (m', w) already exists
+           if w prefers m to m'
+              m' becomes free
+             (m, w) become engaged 
+           else
+             (m', w) remain engaged
+      }
+  }
+  
+  https://en.wikipedia.org/wiki/Stable_marriage_problem
+  
+  ------------------------------------------------------------------------------------
   
   Blossom algorithm for JavaScript
   blossom algorithm, sometimes called the Edmonds’ matching algorithm, can be used on any graph to construct a maximum matching.

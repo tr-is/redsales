@@ -30,7 +30,9 @@ $('#find-match').click(function(){
   ------------------------------------------------------------------------------------
   
   Blossom algorithm for JavaScript
-  
+  blossom algorithm, sometimes called the Edmonds’ matching algorithm, can be used on any graph to construct a maximum matching.
+  in python https://github.com/mattkrick/EdmondsBlossom
+  Python has more API and libraries?
   
   
   /*
@@ -365,7 +367,7 @@ function main(){
   
   https://stackoverflow.com/questions/25706201/matching-algorithm-in-javascript
   ------------------------------------------------------------------------------------
-  Other useful links
+  Other options
   
   Paid option - https://www.sajari.com/match
   
